@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Óticas São Miguel | Conforto Visual</title>
+  <meta name="description" content="Conforto Visual em Todas as Situações. Conheça as Óticas São Miguel em São José dos Campos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
+  <!-- HEADER -->
+  <header class="header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <img src="https://oticassaomiguel.com.br/wp-content/uploads/2026/02/Logo_Otica_Sao_Miguel_500x150-removebg-preview.png" alt="Óticas São Miguel">
+      </a>
+      <nav class="nav-links">
+        <a href="#hero" class="nav-link hover-underline">Home</a>
+        <a href="#sobre" class="nav-link hover-underline">Sobre Nós</a>
+        <a href="#marcas" class="nav-link hover-underline">Marcas</a>
+        <a href="#cupom" class="nav-link hover-underline">Cupom</a>
+      </nav>
+      <a href="https://wa.me/5512997829787" class="btn primary-btn magnetic-btn" data-magnetic>
+        <span class="btn-text">FALE CONOSCO</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg parallax-bg" style="background-image: url('assets/images/store.png');"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="hero-text-area">
+          <h1 class="hero-title reveal-text">
+            Conforto Visual em <span>Todas as Situações</span>
+          </h1>
+          <p class="hero-subtitle blur-reveal">
+            Tecnologia, design e saúde para os seus olhos. Explore o futuro da visão com as Óticas São Miguel.
+          </p>
+          <div class="hero-actions blur-reveal delay-1">
+            <a href="#sobre" class="btn primary-btn magnetic-btn" data-magnetic><span class="btn-text">Conheça a Loja</span></a>
+          </div>
+        </div>
+        <div class="hero-image-area">
+          <div class="floating-element hover-card-3d">
+            <img src="assets/images/hero.png" alt="Óculos Premium" class="mask-reveal">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRADIENT TRANSITION -->
+    <div class="gradient-divider"></div>
+
+    <!-- SOBRE NÓS SECTION -->
+    <section id="sobre" class="sobre-section">
+      <div class="container sobre-content">
+        <div class="sobre-image blur-reveal">
+          <div class="floating-element reverse hover-card-3d">
+            <img src="assets/images/parallax.png" alt="Óculos Elegante">
+          </div>
+        </div>
+        <div class="sobre-text">
+          <h2 class="section-title reveal-text">Transparência e Ética em Primeiro Lugar</h2>
+          <p class="section-desc blur-reveal">
+            Na Óticas São Miguel, acreditamos que enxergar bem é qualidade de vida. Nosso compromisso vai muito além da venda de óculos: entregamos soluções visuais completas com responsabilidade, transparência e excelência técnica.
+          </p>
+          <p class="section-desc blur-reveal delay-1">
+            Trabalhamos com lentes e armações de alta qualidade, sempre priorizando fornecedores confiáveis e tecnologias atualizadas. Cada lente é indicada de forma personalizada, respeitando a real necessidade do cliente.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRADIENT TRANSITION -->
+    <div class="gradient-divider reverse"></div>
+
+    <!-- MARCAS SECTION -->
+    <section id="marcas" class="marcas-section">
+      <div class="container">
+        <h2 class="section-title text-center reveal-text">Nossas Marcas</h2>
+        <p class="section-desc text-center blur-reveal">Trabalhamos com as melhores e mais conceituadas marcas do mercado óptico.</p>
+
+        <div class="brands-grid blur-reveal delay-1">
+          <div class="brand-item magnetic-btn" data-magnetic><span class="btn-text">Ray-Ban</span></div>
+          <div class="brand-item magnetic-btn" data-magnetic><span class="btn-text">Oakley</span></div>
+          <div class="brand-item magnetic-btn" data-magnetic><span class="btn-text">Vogue</span></div>
+          <div class="brand-item magnetic-btn" data-magnetic><span class="btn-text">Ana Hickmann</span></div>
+          <div class="brand-item magnetic-btn" data-magnetic><span class="btn-text">HB</span></div>
+          <div class="brand-item magnetic-btn" data-magnetic><span class="btn-text">Carmim</span></div>
+          <div class="brand-item magnetic-btn" data-magnetic><span class="btn-text">Aramis</span></div>
+          <div class="brand-item magnetic-btn" data-magnetic><span class="btn-text">Mormaii</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRADIENT TRANSITION -->
+    <div class="gradient-divider"></div>
+
+    <!-- CUPOM SECTION -->
+    <section id="cupom" class="cupom-section">
+      <div class="container cupom-container">
+        <div class="cupom-content blur-reveal">
+          <div class="glass-card">
+            <h2 class="section-title">Aproveite as vantagens do Cupom de desconto!</h2>
+            <p class="section-desc">Insira seu código promocional abaixo e garanta seu desconto exclusivo nas Óticas São Miguel. Não fique de fora das nossas ofertas!</p>
+
+            <div class="coupon-wrapper">
+              <div class="coupon-input-group micro-interaction">
+                <input type="text" id="couponInput" placeholder="Digite seu cupom (ex: MIGUEL10)" maxlength="20">
+                <button id="applyCouponBtn" class="btn primary-btn magnetic-btn" data-magnetic><span class="btn-text">Aplicar</span></button>
+              </div>
+
+              <div id="couponFeedback" class="coupon-feedback"></div>
+
+              <div id="successArea" class="success-discount-area hidden">
+                <div class="discount-badge">
+                  <span class="label">Desconto Ganho: </span>
+                  <span id="discountValue" class="value"></span>
+                </div>
+                <button id="whatsappBtn" class="btn success-btn magnetic-btn" data-magnetic>
+                  <span class="btn-text">Fazer Pedido no WhatsApp</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer blur-reveal">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <img src="https://oticassaomiguel.com.br/wp-content/uploads/2026/02/Logo_Otica_Sao_Miguel_500x150-removebg-preview.png" alt="Logo Footer" class="footer-logo">
+        <p>Porque ver bem faz toda diferença.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <p>Rua Sebastião Humel 129, Centro – São José dos Campos.</p>
+        <p>WhatsApp: (12) 99782-9787</p>
+        <p>Segunda a Sexta das 9h às 18h, Sábado das 9h às 15:30.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Óticas São Miguel. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/coupon.js"></script>
+</body>
+</html>
