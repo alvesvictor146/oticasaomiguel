@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -58,6 +59,47 @@
       </div>
     </section>
 
+    <!-- VIDEOS CAROUSEL SECTION -->
+    <section id="videos" class="video-carousel-section">
+      <div class="container">
+        <h2 class="section-title text-center reveal-text">Categorias</h2>
+        <p class="section-desc text-center blur-reveal">Encontre o modelo perfeito para você</p>
+      </div>
+      <div class="swiper videoSwiper blur-reveal delay-1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide category-slide">
+            <video src="Crianças_escolhendo_óculos_com_pais_202608221547.mp4" autoplay loop muted playsinline class="carousel-video"></video>
+            <div class="video-overlay">
+              <h3 class="category-text">Infantil</h3>
+            </div>
+          </div>
+          <div class="swiper-slide category-slide">
+            <video src="Homens_provando_óculos_de_grau_202608221547.mp4" autoplay loop muted playsinline class="carousel-video"></video>
+            <div class="video-overlay">
+              <h3 class="category-text">Masculino</h3>
+            </div>
+          </div>
+          <div class="swiper-slide category-slide">
+            <video src="Pessoas_provando_óculos_de_sol_202608221547.mp4" autoplay loop muted playsinline class="carousel-video"></video>
+            <div class="video-overlay">
+              <h3 class="category-text">Óculos de Sol</h3>
+            </div>
+          </div>
+          <div class="swiper-slide category-slide">
+            <video src="Woman_trying_on_sunglasses_202608221547.mp4" autoplay loop muted playsinline class="carousel-video"></video>
+            <div class="video-overlay">
+              <h3 class="category-text">Feminino</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
     <!-- GRADIENT TRANSITION -->
     <div class="gradient-divider"></div>
 
@@ -88,23 +130,72 @@
     <section id="marcas" class="marcas-section">
       <div class="container">
         <h2 class="section-title text-center reveal-text">Nossas Marcas</h2>
-        <p class="section-desc text-center blur-reveal">Trabalhamos com as melhores e mais conceituadas marcas do mercado óptico.</p>
+        <p class="section-desc text-center blur-reveal">Trabalhamos com as melhores e mais conceituadas lentes do mercado.</p>
+      </div>
 
-        <div class="brands-grid blur-reveal delay-1">
-          <div class="brand-item magnetic-btn" data-magnetic><span class="btn-text">Ray-Ban</span></div>
-          <div class="brand-item magnetic-btn" data-magnetic><span class="btn-text">Oakley</span></div>
-          <div class="brand-item magnetic-btn" data-magnetic><span class="btn-text">Vogue</span></div>
-          <div class="brand-item magnetic-btn" data-magnetic><span class="btn-text">Ana Hickmann</span></div>
-          <div class="brand-item magnetic-btn" data-magnetic><span class="btn-text">HB</span></div>
-          <div class="brand-item magnetic-btn" data-magnetic><span class="btn-text">Carmim</span></div>
-          <div class="brand-item magnetic-btn" data-magnetic><span class="btn-text">Aramis</span></div>
-          <div class="brand-item magnetic-btn" data-magnetic><span class="btn-text">Mormaii</span></div>
+      <div class="marquee-container blur-reveal delay-1">
+        <div class="marquee-track">
+          <div class="marquee-content">
+            <img src="assets/images/marcas.png" alt="Marcas Parceiras" class="marquee-img">
+            <img src="assets/images/marcas.png" alt="Marcas Parceiras" class="marquee-img">
+            <img src="assets/images/marcas.png" alt="Marcas Parceiras" class="marquee-img">
+          </div>
+          <div class="marquee-content">
+            <img src="assets/images/marcas.png" alt="Marcas Parceiras" class="marquee-img">
+            <img src="assets/images/marcas.png" alt="Marcas Parceiras" class="marquee-img">
+            <img src="assets/images/marcas.png" alt="Marcas Parceiras" class="marquee-img">
+          </div>
         </div>
       </div>
     </section>
 
     <!-- GRADIENT TRANSITION -->
     <div class="gradient-divider"></div>
+
+    <!-- PREMIUM BRANDS SECTION -->
+    <section id="premium-brands" class="premium-brands-section">
+      <div class="swiper premiumSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide premium-slide">
+            <video class="premium-video" autoplay loop muted playsinline>
+              <source src="oakley.mp4" type="video/mp4">
+            </video>
+            <div class="premium-overlay"></div>
+            <div class="premium-content">
+              <h2 class="brand-title">Oakley</h2>
+            </div>
+          </div>
+          <div class="swiper-slide premium-slide">
+            <video class="premium-video" autoplay loop muted playsinline>
+              <source src="rayban.mp4" type="video/mp4">
+            </video>
+            <div class="premium-overlay"></div>
+            <div class="premium-content">
+              <h2 class="brand-title">Ray-Ban</h2>
+            </div>
+          </div>
+          <div class="swiper-slide premium-slide">
+            <video class="premium-video" autoplay loop muted playsinline>
+              <source src="fila.mp4" type="video/mp4">
+            </video>
+            <div class="premium-overlay"></div>
+            <div class="premium-content">
+              <h2 class="brand-title">Fila</h2>
+            </div>
+          </div>
+          <div class="swiper-slide premium-slide">
+            <video class="premium-video" autoplay loop muted playsinline>
+              <source src="versace.mp4" type="video/mp4">
+            </video>
+            <div class="premium-overlay"></div>
+            <div class="premium-content">
+              <h2 class="brand-title">Versace</h2>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination premium-pagination"></div>
+      </div>
+    </section>
 
     <!-- CUPOM SECTION -->
     <section id="cupom" class="cupom-section">
@@ -159,5 +250,7 @@
 
   <script src="js/main.js"></script>
   <script src="js/coupon.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/video-carousel.js"></script>
 </body>
 </html>
