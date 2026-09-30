@@ -359,15 +359,17 @@ a { color: inherit; text-decoration: none; }
 .premium-brands-section {
   position: relative;
   width: 100%;
-  height: 70vh;
-  min-height: 500px;
   overflow: hidden;
   background: var(--bg-main);
   margin-top: -50px;
+  display: flex;
+  flex-direction: column;
 }
 .premiumSwiper {
   width: 100%;
-  height: 100%;
+  height: 65vh;
+  min-height: 480px;
+  position: relative;
 }
 .premium-slide {
   position: relative;
@@ -394,32 +396,11 @@ a { color: inherit; text-decoration: none; }
 .premium-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, var(--bg-main) 0%, rgba(0,0,0,0.2) 2%, rgba(0,0,0,0.2) 98%, var(--bg-main) 100%);
+  background: linear-gradient(180deg, var(--bg-main) 0%, rgba(0,0,0,0.08) 8%, rgba(0,0,0,0.15) 85%, #0f121a 100%);
   z-index: 2;
 }
-.premium-content {
-  position: relative;
-  z-index: 3;
-  text-align: center;
-}
-.brand-title {
-  color: #ffffff;
-  font-family: var(--font-display);
-  font-size: clamp(3rem, 8vw, 6rem);
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  text-shadow: 0 10px 30px rgba(0,0,0,0.8);
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-.swiper-slide-active .brand-title {
-  opacity: 1;
-  transform: translateY(0);
-}
 .premium-pagination {
-  bottom: 30px !important;
+  bottom: 25px !important;
   z-index: 10 !important;
 }
 .premium-pagination .swiper-pagination-bullet {
@@ -434,6 +415,80 @@ a { color: inherit; text-decoration: none; }
   opacity: 1;
   width: 30px;
   border-radius: 6px;
+}
+
+/* ===== BRANDS CONTINUOUS TICKER ===== */
+.brands-ticker-bar {
+  width: 100%;
+  background: #0f121a;
+  padding: 16px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.brands-ticker-bar::before,
+.brands-ticker-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.brands-ticker-bar::before {
+  left: 0;
+  background: linear-gradient(to right, #0f121a 0%, transparent 100%);
+}
+.brands-ticker-bar::after {
+  right: 0;
+  background: linear-gradient(to left, #0f121a 0%, transparent 100%);
+}
+.brands-ticker-track {
+  display: flex;
+  width: max-content;
+  animation: tickerBrands 28s linear infinite;
+}
+.brands-ticker-track:hover {
+  animation-play-state: paused;
+}
+.brands-ticker-content {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+  padding-right: 2.2rem;
+  white-space: nowrap;
+}
+.ticker-brand-item {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f1f3f9;
+  opacity: 0.9;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-block;
+  cursor: default;
+}
+.ticker-brand-item:hover {
+  color: var(--primary);
+  opacity: 1;
+  transform: translateY(-2px) scale(1.06);
+  text-shadow: 0 0 15px rgba(207, 46, 46, 0.5);
+}
+.ticker-brand-dot {
+  color: var(--primary);
+  font-size: 0.85rem;
+  opacity: 0.8;
+  display: inline-block;
+}
+@keyframes tickerBrands {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 /* ===== CUPOM SECTION ===== */
